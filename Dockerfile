@@ -12,3 +12,13 @@ WORKDIR /app
 ENTRYPOINT ["yarn", "start"]
 # Se expone el puerto 3333
 EXPOSE 3333
+
+
+# docker commands
+
+
+######>Build
+# cd /home/peya/peyalookerbot
+# docker build . -t peya/lookerbot 
+######>Run
+# docker run -ti --name=peyalookerbot -p=3333:3333 -d peya/lookerbot
