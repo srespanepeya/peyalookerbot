@@ -1,7 +1,7 @@
 # Se parte de la imagen node:6.10.3-alpine
 FROM node:10.16.0-alpine
 # Copiar primero archivo de configuracion
-COPY package.json package.json
+COPY package.json /app/package.json
 # Se ejecuta el comando yarn install para instalar todas las dependencias del archivo package.json
 RUN yarn install
 # Se agregan todos los archivos al directorio /app
